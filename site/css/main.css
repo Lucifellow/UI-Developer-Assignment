@@ -1,0 +1,54 @@
+
+/*For changing header font-family, font-color and background color*/
+.ui-page .ui-header {
+    font-family: 'Open Sans', sans-serif;
+    background-color: red;
+    color:white;
+}
+
+/*changing footer background color and font color*/
+.ui-page .ui-footer{
+    background-color: red;
+    color:white;
+}
+
+
+/*Adjusting design of Place Order button*/
+.ui-page .ui-footer button{
+    margin-bottom:0.5em;
+    border-radius: 30px;
+}
+
+/*changing background of + and - buttons to red*/
+.ui-btn::after{
+    background-color: red;
+}
+
+/* Resizing images to be responsive on multiple screens */
+img{
+    max-width: 100% !important;
+    height:auto !important;
+}
+
+/* Centering images in all-products */
+#all-products img{
+    margin-top: 0.75em;
+}
+
+
+/*Adding hover animation to Place Order button*/
+.ui-page .ui-footer button:hover{
+    animation-name: highlight-button;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+/* animates background, font color and box shadow of the Place Order button*/
+@keyframes highlight-button{
+    100%{
+        background-color: #0275d8;
+        border-color: #0275d8;
+        color:white;
+        box-shadow: 3px 2px rgb(20, 20, 20);
+    }
+}
